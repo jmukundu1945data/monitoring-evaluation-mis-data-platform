@@ -1,5 +1,4 @@
 ## Monitoring & Evaluation (M&E) MIS Data Platform
-# MIS M&E Data Platform
 
 This repository is intended to demonstrate a practical, field-tested approach to building robust MIS data systems for government and development partners.
 
@@ -25,7 +24,6 @@ It is suitable for integration into national MIS environments and analytics plat
 
 ![Architecture](assets/diagrams/architecture_overview.png)
 
-## Monitoring & Evaluation (M&E) MIS Data Platform
 ## Data Model (ERD)
 
 The following diagram illustrates the core MIS data architecture based on a star schema design.
@@ -323,6 +321,7 @@ FROM Data
 WHERE GenderID IS NULL
    OR AgeGroupID IS NULL;   
 
+```
 ## Key Features
 
 - **Indicator-Based Data Model**  
@@ -391,7 +390,7 @@ The platform is designed to integrate with common systems used in government and
 
 
 ## Repository Structure
-mis-mne-data-platform/
+monitoring-evaluation-mis-data-platform/
 │
 ├── sql/ # Database scripts (DDL, views, validation)
 ├── dbt/ # Transformation layer (optional extension)
