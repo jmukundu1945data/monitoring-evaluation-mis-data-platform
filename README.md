@@ -29,6 +29,7 @@ It is suitable for integration into national MIS environments and analytics plat
 The following diagram illustrates the core MIS data architecture based on a star schema design.
 
 ![MIS ERD](assets/diagrams/erd_mis_star_schema.png)
+
 ### Design Summary
 
 The model follows a star schema approach with a central fact table (`Data`) capturing indicator values, linked to multiple analytical dimensions:
@@ -43,8 +44,6 @@ This structure supports:
 - Disaggregated reporting
 - Indicator-based aggregation
 - Scalable integration into BI tools such as Power BI
-This repository presents a production-oriented Management Information System (MIS) data platform...
-
 The design reflects over a decade of practical experience supporting large-scale health and development programmes, including indicator-based reporting frameworks such as PEPFAR. It demonstrates how structured data modelling, validation logic, and analytical design can be combined to deliver reliable, scalable, and decision-ready information systems.
 
 The platform is built around a dimensional (star schema) architecture and supports:
@@ -393,14 +392,11 @@ The platform is designed to integrate with common systems used in government and
 monitoring-evaluation-mis-data-platform/
 │
 ├── sql/ # Database scripts (DDL, views, validation)
-├── dbt/ # Transformation layer (optional extension)
 ├── docs/ # Architecture and design documentation
 ├── samples/ # Example analytical and validation queries
-├── powerbi/ # Reporting integration notes
 ├── assets/ # Diagrams and supporting materials
 │
 ├── README.md
-├── LICENSE
 └── .gitignore
 
 
